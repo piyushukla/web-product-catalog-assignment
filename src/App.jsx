@@ -7,6 +7,9 @@ import ProductGrid from "./components/ProductGrid/ProductGrid";
 import { filterProducts } from "./utils/filterProducts";
 import { sortProducts } from "./utils/sortProducts";
 
+// Centralized state management for filters, sorting and products
+// App acts as the orchestrator and passes only required props to child components
+
 function App() {
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");

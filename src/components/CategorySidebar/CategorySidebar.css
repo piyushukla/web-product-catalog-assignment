@@ -23,7 +23,7 @@
     background-color: #e5e7eb;
   }
   
-  /* ✅ ACTIVE CATEGORY */
+  /* ACTIVE CATEGORY */
   .sidebar-item.active {
     background-color: #2563eb; /* primary blue */
     color: #ffffff;

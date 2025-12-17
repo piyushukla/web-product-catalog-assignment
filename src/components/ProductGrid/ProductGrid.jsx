@@ -4,6 +4,7 @@ import noProductImg from "../../assets/no_product_found.png";
 import "./ProductGrid.css";
 
 function ProductGrid({ products }) {
+    // Fallback UI when no products match current filters
   if (!products || products.length === 0) {
     return (
       <div className="no-products">

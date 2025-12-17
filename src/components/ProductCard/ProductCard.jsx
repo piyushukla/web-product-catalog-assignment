@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ProductCard.css";
 
+
 function ProductCard({ product }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -28,7 +29,8 @@ function ProductCard({ product }) {
         <span className="rating-count">({product?.rating?.count})</span>
       </div>
       {/* Description */}
-      <p className="description">
+      <p className="description"> 
+{/* Allows users to expand content using Read more / Read less */}
         {textToShow}
         {!expanded && isLong && "... "}
         {isLong && (

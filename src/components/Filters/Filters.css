@@ -17,7 +17,7 @@
     transition: background-color 0.25s ease, color 0.25s ease;
   }
   
-  /* 🔵 Hover state */
+  /*  Hover state */
   .filter-button:hover {
     background-color: #2563eb; /* primary blue */
     color: #ffffff;

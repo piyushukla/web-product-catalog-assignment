@@ -1,3 +1,7 @@
+
+// Applies discount-based sorting only when 'All' category is selected
+// Assumption: 10% discount on jewellery and 30% on men's clothing
+
 export const sortProducts = (products, sortType, selectedCategory) => {
     const discountMap = {
       "jewelery": 0.1,
