@@ -1,41 +1,49 @@
-### Assignment use cases
+# Product Listing App (React + Vite)
 
-1. Implement UI based on below UX design (take this as reference, need not to be exact similar).
-2. Show list of categories and products.
-3. On click of category, show corresponding products.
-4. On click of all categories, show all products for all categories.
-5. Price range based filtering (could make use of slider)
+This is a product listing application built using **React** and **Vite**, consuming data from the **Fake Store API**.
 
-### Framework:
+The application allows users to browse products by category, filter by price range, search by keywords, and sort products based on price or category-based discounts.
 
-- Free to use any framework for html, CSS, JS or TS.
+---
 
-### Brownie Points:
+##  Features
 
-1. sorting based on prices
-2. sorting based on discounts (assume discount of 10 % discount on jewellery and 30% discount on men's clothing), applicable only when "All categories" is selected.
+- Fetches products from Fake Store API
+- Category-based filtering
+- Price range filtering using slider
+- Search products by title and description
+- Sort products by price
+- Sort products by discount (applicable only when "All" categories is selected)
+- Product rating display using stars
+- Read more / Read less for long descriptions
+- Fallback UI for empty results
+- Responsive layout (desktop, tablet, mobile)
 
-### Expectation/Evaluation Criteria:
+---
 
-1. **Code Modularity (Highest priority)** - Assignment should have different components/services/files for different functionalities following Single Responsibility Principle and Separation of Concerns
+##  Tech Stack
 
-2. **Bug Free Code (Highest priority)** - It’s ok if any of the acceptance criteria is not delivered but the ones delivered should be bug free. For eg. If price based filtering is not provided due to time constraint, it is acceptable but broken functionality should not be submitted in the final PR
+- React
+- Vite
+- JavaScript (ES6+)
+- Plain CSS (no inline styles)
+- Fake Store API
 
-3. **Naming Conventions (High Priority)** - All the variables and functions should be named in a way that it represents what is purpose of having that variable/function in the code. Also the naming should be consistent across the code whether it be camel case or snake case or something else. Also some common practices should be followed e.g. classes always start with capital letters
+---
 
-4. **Readable Code (Medium Priority)** - Code should be properly indented and prettified.
+##  Project Structure
 
-5. **UI (Low Priority)** - How neat and pretty the UI looks. If candidate has time, they can use any UI library like bootstrap/material to make the UI more beautiful to earn more points.
+The project follows a **component-based architecture** with clear separation of concerns:
 
+- `components/` – UI components (Sidebar, Filters, ProductCard, ProductGrid)
+- `services/` – API calls
+- `utils/` – Business logic (filtering, sorting)
+- `App.jsx` – Main container and state management
 
-### API Reference:
+---
 
-Make use of API's from https://fakestoreapi.com/docs
+## ▶️ Getting Started
 
-### Assignment submission:
-* Fork this repository, commit and push changes to your forked repository.
-* Raise a PR in this repo with your forked repository changes.
-
-### UX Design:
-
-![UX design image](./images/UX-design.jpg)
+```bash
+npm install
+npm run dev
